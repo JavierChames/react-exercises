@@ -56,10 +56,9 @@ class Q2 extends React.Component {
         return (
             <div>
                 <div>
-                    <span>What is your favorit front end topic/feature?</span>
-                </div>
-                <div>
-                 <Q2input />
+                    What is your favorit front end topic/feature?
+                    <br/>
+                    <Q2input />
                 </div>
             </div>
         );
@@ -69,7 +68,7 @@ class Q2 extends React.Component {
 class Q2input extends React.Component {
     render() {
         return (
-            <input type="text"/>
+            <input type="text" />
         );
     }
 }
