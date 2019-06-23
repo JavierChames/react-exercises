@@ -1,21 +1,20 @@
-
 class Quiz extends React.Component {
     render() {
         return (
             <div className="Quiz">
+                <Q1 />
+                <Q2 />
+            </div>
+        );
+    }
+}
+
+class Q1 extends React.Component {
+    render() {
+        return (
+            <div>
+                <h2>How do you like front end?</h2>
                 <QuizTitle />
-                <div>
-                    <Q1 />
-                </div>
-                <div>
-                    <Q1input />
-                </div>
-                <div>
-                    <Q2 />
-                </div>
-                <div>
-                    <Q2input />
-                </div>
             </div>
         );
     }
@@ -23,14 +22,15 @@ class Quiz extends React.Component {
 
 class QuizTitle extends React.Component {
     render() {
-        return <h1>How do you liek front end?</h1>;
-    }
-}
-
-class Q1 extends React.Component {
-    render() {
         return (
-            <span>How much do you love front end?</span>
+            <div>
+                <div>
+                    <span>How much do you love front end?</span>
+                </div>
+                <div>
+                    <Q1input />
+                </div>
+            </div>
         );
     }
 }
@@ -38,7 +38,14 @@ class Q1 extends React.Component {
 class Q1input extends React.Component {
     render() {
         return (
-            <input type="range" name="points" min="0" max="10"> </input>
+            <div>
+                <input type="range" max="10" list="tickmarks" />
+                <datalist id="tickmarks">
+                    <option value="0" label="0"></option>
+                    <option value="5" label="5"></option>
+                    <option value="10" label="10"></option>
+                </datalist>
+            </div>
         );
     }
 }
@@ -47,7 +54,14 @@ class Q1input extends React.Component {
 class Q2 extends React.Component {
     render() {
         return (
-            <span>What is your favorit front end topic/feature?</span>
+            <div>
+                <div>
+                    <span>What is your favorit front end topic/feature?</span>
+                </div>
+                <div>
+                 <Q2input />
+                </div>
+            </div>
         );
     }
 }
@@ -55,29 +69,12 @@ class Q2 extends React.Component {
 class Q2input extends React.Component {
     render() {
         return (
-            <input type="text"> </input>
+            <input type="text"/>
         );
     }
 }
 
-
-// class Box4 extends React.Component {
-//     render() {
-//         return (<div className="box4"></div>);
-//     }
-// }
-
-
-
-
-
 ReactDOM.render(
-    // < HelloworldComponent />,
-    // <div>
     <Quiz />,
-    // {/* <Box2 />, */}
-    // {/* <Box3 />, */}
-    // {/* <Box4 />, */}
-    // </div>,
     document.getElementById("root")
 );
