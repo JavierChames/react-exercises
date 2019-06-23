@@ -7,7 +7,6 @@ class App extends React.Component {
                 <Main />
                 <MainText />
                 <MainPictures />
-                <MainPicturesText />
             </div>
         );
     }
@@ -111,29 +110,6 @@ class MainPictures extends React.Component {
         )
     };
 }
-
-class MainPicturesText extends React.Component {
-    render() {
-        return (
-            <div>
-
-
-
-
-                {/* <p>   CONCEPT AND IDEAS"</p>
-                <p>  DESIDNG ADN BRANDS" </p> */}
-            </div >
-
-
-        )
-    };
-}
-
-
-
-
-
-
 ReactDOM.render(
     <App />,
     document.getElementById("root")
