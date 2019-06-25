@@ -1,0 +1,95 @@
+/* body {
+  background: cadetblue;
+} */
+
+.wrap {
+  background-color: #8695a8;
+  width: 640px;
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #eef5fd;
+  height: 300px;
+  width: 200px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.iconOne {
+  margin-top: 60px;
+  margin-right: -50%;
+  background-image: url(./images/beach.png);
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 160px;
+}
+
+.iconTwo {
+  margin-top: 60px;
+  margin-right: -50%;
+  background-image: url(./images/house.png);
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 160px;
+}
+
+.iconThree {
+  margin-top: 60px;
+  margin-right: -50%;
+  background-image: url(./images/world.png);
+  background-repeat: no-repeat;
+  height: 120px;
+  width: 160px;
+}
+
+.title {
+  font-size: 10px;
+  color: #89969f;
+}
+
+.textPart {
+  font-size: 8px;
+  padding-left: 31px;
+  padding-right: 28px;
+  color: #bdc6cf;
+  flex-grow: 1;
+}
+
+.on {
+  height: 3px;
+  width: 3px;
+  border-radius: 50px;
+  background-color: #bdc6cf;
+  margin: 2px;
+}
+
+.off {
+  height: 3px;
+  width: 3px;
+  border-radius: 50px;
+  background-color: rgb(119, 119, 119);
+  margin: 2px;
+}
+
+.DotWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 10px;
+  width: 30px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
