@@ -1,0 +1,10 @@
+button {
+  background-color: pink;
+  margin: 10px;
+}
+
+.false {
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: white;
+}
